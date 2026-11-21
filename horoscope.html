@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horoscope | VEDASHIVA — Daily, Weekly, Monthly, Yearly</title>
+  <meta name="description" content="VEDASHIVA horoscope: daily, weekly, monthly and yearly 2026 predictions for all zodiac signs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2315370D'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='20' font-weight='bold' text-anchor='middle' fill='%23E5CD82'%3EVS%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="header-blur">
+    <div class="container header-wrap">
+      <a href="index.html" class="logo reveal reveal-delay-1"><div class="logo-mark">VS</div>VEDASHIVA</a>
+      <nav>
+        <ul class="nav-links reveal reveal-delay-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+          <li><a href="horoscope.html" style="color:var(--accent-dark)">Horoscope</a></li>
+          <li><a href="calculators.html">Free Calculators</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions reveal reveal-delay-3"><a href="consultations.html" class="btn btn-outline">Book Consultation</a></div>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">&#9776;</button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header"><div class="logo"><div class="logo-mark">VS</div>VEDASHIVA</div><button class="mobile-close" id="mobileClose" aria-label="Close menu">&#215;</button></div>
+    <ul class="mobile-nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="consultations.html">Consultations</a></li><li><a href="horoscope.html">Horoscope</a></li><li><a href="calculators.html">Free Calculators</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="mobile-actions"><a href="consultations.html" class="btn btn-primary btn-sm">Book Consultation</a></div>
+  </div>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <section class="page-hero reveal reveal-delay-1">
+    <div class="container"><h1>Daily <span class="accent">Horoscope</span></h1><p>Your zodiac forecast for career, love, health, and finance.</p></div>
+  </section>
+
+  <section class="section reveal reveal-delay-2">
+    <div class="container">
+      <div class="section-title"><h2>Zodiac <span class="accent">Predictions</span></h2></div>
+      <p class="section-subtitle">Select a timeframe to read your horoscope.</p>
+      <div class="horoscope-tabs reveal reveal-delay-3">
+        <button class="tab-btn active" data-target="daily">Daily</button>
+        <button class="tab-btn" data-target="weekly">Weekly</button>
+        <button class="tab-btn" data-target="monthly">Monthly</button>
+        <button class="tab-btn" data-target="yearly">Yearly 2026</button>
+      </div>
+      <div class="horo-grid">
+        <div id="daily" class="tab-panel active reveal reveal-delay-3">
+          <div class="horo-card"><div class="horo-sign">&#x2648;</div><div class="horo-name">Aries</div><div class="horo-date">Mar 21 – Apr 19</div><p class="horo-pred">Dynamic day. New career opportunities; stay patient in relationships.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2649;</div><div class="horo-name">Taurus</div><div class="horo-date">Apr 20 – May 20</div><p class="horo-pred">Financial gains likely. Focus on health and family harmony.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264a;</div><div class="horo-name">Gemini</div><div class="horo-date">May 21 – Jun 20</div><p class="horo-pred">Communication is your strength. Favorable for travel and learning.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264b;</div><div class="horo-name">Cancer</div><div class="horo-date">Jun 21 – Jul 22</div><p class="horo-pred">Emotional balance brings clarity. Good for home decisions.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264c;</div><div class="horo-name">Leo</div><div class="horo-date">Jul 23 – Aug 22</div><p class="horo-pred">Leadership shines. Recognition at work; romance favored.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264d;</div><div class="horo-name">Virgo</div><div class="horo-date">Aug 23 – Sep 22</div><p class="horo-pred">Detail work pays off. Watch spending; health stable.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264e;</div><div class="horo-name">Libra</div><div class="horo-date">Sep 23 – Oct 22</div><p class="horo-pred">Balance in relationships. Good day for partnerships and legal matters.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264f;</div><div class="horo-name">Scorpio</div><div class="horo-date">Oct 23 – Nov 21</div><p class="horo-pred">Intense energy. Transformation ahead; trust your intuition.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2650;</div><div class="horo-name">Sagittarius</div><div class="horo-date">Nov 22 – Dec 21</div><p class="horo-pred">Adventure calls. Favorable for higher studies and long travel.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2651;</div><div class="horo-name">Capricorn</div><div class="horo-date">Dec 22 – Jan 19</div><p class="horo-pred">Hard work recognized. Discipline brings financial stability.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2652;</div><div class="horo-name">Aquarius</div><div class="horo-date">Jan 20 – Feb 18</div><p class="horo-pred">Innovative ideas shine. Social connections bring opportunities.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2653;</div><div class="horo-name">Pisces</div><div class="horo-date">Feb 19 – Mar 20</div><p class="horo-pred">Intuition is strong. Creative pursuits and spirituality favored.</p></div>
+        </div>
+        <div id="weekly" class="tab-panel reveal reveal-delay-3">
+          <div class="horo-card"><div class="horo-sign">&#x2648;</div><div class="horo-name">Aries</div><div class="horo-date">Week Ahead</div><p class="horo-pred">Progress in career and personal goals. Avoid impulsive decisions mid-week.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2649;</div><div class="horo-name">Taurus</div><div class="horo-date">Week Ahead</div><p class="horo-pred">Stable week with financial growth. Nurture close relationships.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264a;</div><div class="horo-name">Gemini</div><div class="horo-date">Week Ahead</div><p class="horo-pred">Busy week socially. New connections could lead to opportunities.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264b;</div><div class="horo-name">Cancer</div><div class="horo-date">Week Ahead</div><p class="horo-pred">Focus on home and family. Emotional healing favored.</p></div>
+        </div>
+        <div id="monthly" class="tab-panel reveal reveal-delay-3">
+          <div class="horo-card"><div class="horo-sign">&#x2648;</div><div class="horo-name">Aries</div><div class="horo-date">This Month</div><p class="horo-pred">New beginnings and bold moves favor Aries this month.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2649;</div><div class="horo-name">Taurus</div><div class="horo-date">This Month</div><p class="horo-pred">Steady progress and comfort in domestic life.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264a;</div><div class="horo-name">Gemini</div><div class="horo-date">This Month</div><p class="horo-pred">Communication and short trips bring gains.</p></div>
+        </div>
+        <div id="yearly" class="tab-panel reveal reveal-delay-3">
+          <div class="horo-card"><div class="horo-sign">&#x2648;</div><div class="horo-name">Aries</div><div class="horo-date">2026</div><p class="horo-pred">A transformative year with career growth and financial stability.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x2649;</div><div class="horo-name">Taurus</div><div class="horo-date">2026</div><p class="horo-pred">Solid foundation building; focus on long-term investments.</p></div>
+          <div class="horo-card"><div class="horo-sign">&#x264a;</div><div class="horo-name">Gemini</div><div class="horo-date">2026</div><p class="horo-pred">Expansion in learning, travel and social circles.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand reveal reveal-delay-1"><div class="logo"><div class="logo-mark">VS</div>VEDASHIVA</div><p>Authentic Vedic astrology, numerology &amp; consultations.</p><div class="socials"><a href="#" aria-label="Instagram">&#128251;</a><a href="#" aria-label="YouTube">&#128250;</a><a href="#" aria-label="WhatsApp">&#9993;</a></div></div>
+        <div class="footer-col reveal reveal-delay-2"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="consultations.html">Consultations</a></li></ul></div>
+        <div class="footer-col reveal reveal-delay-3"><h4>Contact</h4><ul><li><a href="tel:+919818999037">&#9742; +91 98189 99037</a></li><li><a href="mailto:info@vedashiva.com">&#9993; info@vedashiva.com</a></li><li><a href="contact.html">Visit Us</a></li></ul></div>
+      </div>
+      <div class="footer-bottom reveal reveal-delay-1"><span>&copy; <span id="year"></span> VEDASHIVA. All rights reserved.</span><div class="links"><a href="#">Terms</a> <a href="#">Privacy</a> <a href="#">Refund</a></div></div>
+    </div>
+  </footer>
+  <div id="toast" role="alert" aria-live="polite"><span id="toastMsg"></span></div>
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

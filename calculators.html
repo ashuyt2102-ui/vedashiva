@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Calculators | VEDASHIVA — Numerology & Astrology Tools</title>
+  <meta name="description" content="Free astrology and numerology calculators by VEDASHIVA: destiny number, love compatibility and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2315370D'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='20' font-weight='bold' text-anchor='middle' fill='%23E5CD82'%3EVS%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="header-blur">
+    <div class="container header-wrap">
+      <a href="index.html" class="logo reveal reveal-delay-1"><div class="logo-mark">VS</div>VEDASHIVA</a>
+      <nav>
+        <ul class="nav-links reveal reveal-delay-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+          <li><a href="horoscope.html">Horoscope</a></li>
+          <li><a href="calculators.html" style="color:var(--accent-dark)">Free Calculators</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions reveal reveal-delay-3"><a href="consultations.html" class="btn btn-outline">Book Consultation</a></div>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">&#9776;</button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header"><div class="logo"><div class="logo-mark">VS</div>VEDASHIVA</div><button class="mobile-close" id="mobileClose" aria-label="Close menu">&#215;</button></div>
+    <ul class="mobile-nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="consultations.html">Consultations</a></li><li><a href="horoscope.html">Horoscope</a></li><li><a href="calculators.html">Free Calculators</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="mobile-actions"><a href="consultations.html" class="btn btn-primary btn-sm">Book Consultation</a></div>
+  </div>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <section class="page-hero reveal reveal-delay-1">
+    <div class="container"><h1>Free <span class="accent">Calculators</span></h1><p>Instant numerology and astrology tools at your fingertips.</p></div>
+  </section>
+
+  <section class="section reveal reveal-delay-2">
+    <div class="container">
+      <div class="section-title"><h2>Popular <span class="accent">Calculators</span></h2></div>
+      <p class="section-subtitle">Calculate your key numbers instantly — completely free.</p>
+      <div class="calc-grid reveal reveal-delay-3">
+        <div class="card" style="border:2px solid var(--accent);">
+          <div class="card-icon">&#128218;</div>
+          <h4>Destiny Number</h4>
+          <p>Find your life-path number from your date of birth.</p>
+          <form id="destinyForm" class="calc-card" style="border:none;padding:1rem;margin-top:1rem;background:var(--bg-soft);">
+            <label style="display:block;font-size:0.8rem;color:var(--text-light);margin-bottom:0.4rem;">Date of Birth</label>
+            <input type="date" name="dob" required style="width:100%;padding:0.6rem;border-radius:8px;border:1px solid var(--border);margin-bottom:0.7rem;font-size:0.9rem;" />
+            <button type="submit" class="btn btn-primary btn-sm" style="width:100%;">Calculate</button>
+          </form>
+          <div class="calc-result" style="display:none;margin-top:0.75rem;"><span class="calc-output" style="font-weight:700;color:var(--accent-dark);font-size:1.1rem;"></span></div>
+        </div>
+        <div class="card" style="border:2px solid var(--accent);">
+          <div class="card-icon">&#128150;</div>
+          <h4>Love Compatibility</h4>
+          <p>Check romantic compatibility between two names.</p>
+          <form id="loveForm" class="calc-card" style="border:none;padding:1rem;margin-top:1rem;background:var(--bg-soft);">
+            <label style="display:block;font-size:0.8rem;color:var(--text-light);margin-bottom:0.4rem;">Your Name</label>
+            <input type="text" name="name1" required style="width:100%;padding:0.6rem;border-radius:8px;border:1px solid var(--border);margin-bottom:0.5rem;font-size:0.9rem;" />
+            <label style="display:block;font-size:0.8rem;color:var(--text-light);margin-bottom:0.4rem;">Partner's Name</label>
+            <input type="text" name="name2" required style="width:100%;padding:0.6rem;border-radius:8px;border:1px solid var(--border);margin-bottom:0.7rem;font-size:0.9rem;" />
+            <button type="submit" class="btn btn-primary btn-sm" style="width:100%;">Calculate</button>
+          </form>
+          <div class="calc-result" style="display:none;margin-top:0.75rem;"><span class="calc-output" style="font-weight:700;color:var(--accent-dark);font-size:1.1rem;"></span></div>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128471;</div>
+          <h4>Kundli Calculator</h4>
+          <p>Generate your birth chart with planetary positions and dosha analysis.</p>
+          <div class="card-footer"><a href="consultations.html" class="btn btn-outline btn-sm">Get Kundli</a></div>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127778;</div>
+          <h4>Lucky Color</h4>
+          <p>Discover your lucky colors based on your numerology number.</p>
+          <div class="card-footer"><a href="calculators.html#destiny" class="btn btn-outline btn-sm">Check</a></div>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128197;</div>
+          <h4>Nakshatra Finder</h4>
+          <p>Find your birth star (nakshatra) and its influence on your life.</p>
+          <div class="card-footer"><a href="contact.html" class="btn btn-outline btn-sm">Enquire</a></div>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128139;</div>
+          <h4>Baby Name Generator</h4>
+          <p>Auspicious baby names based on nakshatra and numerology vibrations.</p>
+          <div class="card-footer"><a href="contact.html" class="btn btn-outline btn-sm">Get Names</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand reveal reveal-delay-1"><div class="logo"><div class="logo-mark">VS</div>VEDASHIVA</div><p>Authentic Vedic astrology, numerology &amp; consultations.</p><div class="socials"><a href="#" aria-label="Instagram">&#128251;</a><a href="#" aria-label="YouTube">&#128250;</a><a href="#" aria-label="WhatsApp">&#9993;</a></div></div>
+        <div class="footer-col reveal reveal-delay-2"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="horoscope.html">Horoscope</a></li><li><a href="consultations.html">Consultations</a></li></ul></div>
+        <div class="footer-col reveal reveal-delay-3"><h4>Contact</h4><ul><li><a href="tel:+919818999037">&#9742; +91 98189 99037</a></li><li><a href="mailto:info@vedashiva.com">&#9993; info@vedashiva.com</a></li><li><a href="contact.html">Visit Us</a></li></ul></div>
+      </div>
+      <div class="footer-bottom reveal reveal-delay-1"><span>&copy; <span id="year"></span> VEDASHIVA. All rights reserved.</span><div class="links"><a href="#">Terms</a> <a href="#">Privacy</a> <a href="#">Refund</a></div></div>
+    </div>
+  </footer>
+  <div id="toast" role="alert" aria-live="polite"><span id="toastMsg"></span></div>
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
